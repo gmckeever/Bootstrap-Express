@@ -1,0 +1,26 @@
+<%= render 'head' %>
+
+<body class="api">
+  <%= render 'header' %>
+
+  <div class="sub-nav">
+    <h2><a href="/docs/">Documentation</a></h2>
+
+    <ul>
+      <li><a href="/docs/">Documentation</a></li>
+      <li><a href="/api/" class="active">API</a></li>
+      <li><a href="/webhooks/">Webhooks</a></li>
+    </ul>
+  </div>
+
+  <div id="wrapper">
+    <%= render 'sidebar' %>
+
+    <div class="content">
+      <%= yield %>
+    </div>
+  </div><!-- #wrapper -->
+
+  <%= render 'footer' %>
+</body>
+</html>
